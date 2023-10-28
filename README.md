@@ -11,36 +11,34 @@ The project is organized into two main folders:
 In the `backend` folder, you will find the server-side components of the project, including the Kafka setup and the Express server with WebSocket functionality. To set up the backend, follow these steps:
 
 1. Navigate to the `backend` folder:
-   ```bash
-   cd backend
+```bash
+cd backend
+```
 Install the required dependencies:
-
-bash
-Copy code
+```bash
 npm install
+```
 Start the server:
-
-bash
-Copy code
+```bash
 npm run start
+```
+
 2. Frontend
 The frontend folder contains the Angular application responsible for displaying data received from the Kafka stream. To set up the frontend, follow these steps:
 
 Navigate to the frontend folder:
 
-bash
-Copy code
+```bash
 cd frontend
+```
 Install the required dependencies, including --legacy-peer-deps:
-
-bash
-Copy code
+```bash
 npm install --legacy-peer-deps
+```
 Start the Angular app:
-
-bash
-Copy code
+```bash
 npm run start
+```
 Dependencies
 To run this project successfully, make sure you have Kafka installed and running. You'll need to set up Kafka topics and producers to start streaming data to the server.
 
