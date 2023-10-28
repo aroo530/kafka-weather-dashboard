@@ -1,0 +1,18 @@
+<h1>Welcome to my Kafka Consumer powered dashboard</h1>
+<h2>Weather in {{location ? location.name : "" }}</h2>
+<small>Last Updated {{lastUpdated}}</small>
+<div class="container">
+  <div class="meta ">
+    <h3>Data</h3>
+    <p>Location {{location ? location.name : "" }}</p>
+    <p>localTime {{location ? location.localtime : "" }}</p>
+  </div>
+  <canvas id="myChart"></canvas>
+  <div class="square"></div>
+  <div class="square">
+    <h3>Condition</h3>
+    <p>{{condition ? condition.condition : "" }}</p>
+    <img src="{{condition?.iconURL}}" alt="nan">
+  </div>
+</div>
+
